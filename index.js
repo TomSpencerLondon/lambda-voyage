@@ -1,5 +1,3 @@
-console.log("it is working")
-
 var modalBtn = document.querySelector('.modal-btn');
 var modalBg = document.querySelector('.modal-bg');
 var modalClose = document.querySelector('.modal-close');
