@@ -124,19 +124,25 @@ body {
     background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media only screen
+and (min-device-width: 320px) {
     .row {
         flex-direction: column;
     }
 
     .modal {
+        position: relative;
+        background-color: white;
+        display: flex;
         height: auto;
         width: auto;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
@@ -164,16 +170,20 @@ body {
     opacity: 1;
 }
 
-.modal {
-    position: relative;
-    background-color: white;
-    width: 30%;
-    height: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+@media screen
+and (min-device-width: 1200px) {
+    .modal {
+        position: relative;
+        background-color: white;
+        width: 30%;
+        height: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
 }
+
 
 .modal-close {
     background-color: #ADADA3;
