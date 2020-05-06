@@ -36,7 +36,22 @@ body {
     color: black;
 }
 
-/* Header/logo Title */
+@media screen
+and (min-device-width: 1200px) {
+    .header {
+        padding: 80px;
+        text-align: center;
+        color: white;
+        background-image: url("lambda-voyage.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
+        overflow: hidden;
+        height: 85vh;
+        position: relative;
+    }
+}
+
 .header {
     padding: 80px;
     text-align: center;
@@ -44,12 +59,31 @@ body {
     background-image: url("lambda-voyage.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
     width: auto;
     overflow: hidden;
-    height: 85vh;
     position: relative;
 }
+
+@media screen
+and (min-device-width: 320px) {
+    .header {
+        height: 52vh;
+    }
+    .play {
+        top: 22vh;
+    }
+}
+
+@media screen
+and (min-device-width: 1200px) {
+    .header {
+        height: 85vh;
+    }
+    .play {
+        top: 35vh;
+    }
+}
+
 
 /* Increase the font size of the heading */
 .header h1 {
@@ -60,7 +94,6 @@ body {
     position: absolute;
     width: 90px;
     height: 90px;
-    top: 35vh;
     left: 46vw;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 90px;
